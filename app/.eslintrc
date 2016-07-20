@@ -1,0 +1,6 @@
+{
+  "extends": "sl",
+  "rules": {
+    "eol-last": "off"
+	}
+}
