@@ -1,0 +1,32 @@
+@import "vars";
+
+.media {
+	$content-padding: 26px;
+
+	margin-bottom: 28px;
+	padding: $content-padding;
+	background-color: $color-bg-alt;
+	text-align: center;
+
+	.media-title {
+		margin: 0;
+	}
+
+	.media-object-wrap {
+		display: block;
+		margin: (-$content-padding) (-$content-padding) $content-padding;
+	}
+
+	.media-object {
+		display: block;
+		width: 100%;
+	}
+
+	p {
+		text-align: left;
+	}
+
+	.media-link {
+		font-weight: 600;
+	}
+}

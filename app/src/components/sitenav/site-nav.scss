@@ -1,0 +1,144 @@
+@import "../../gfx/vars.scss";
+@import "../../gfx/mixins.scss";
+
+.site-nav {
+	.menu {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		@include mobile {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			padding: $header-height-mobile 20px 20px;
+			background-color: $color-text;
+			text-align: center;
+			z-index: 800;
+			transform: translateX(100%);
+			will-change: transform;
+			transition: transform 300ms;
+		}
+
+		@include tablet {
+			margin-top: 15px;
+			text-align: right;
+		}
+
+		> li {
+			margin: 5px 0;
+
+			@include tablet {
+				display: inline-block;
+				margin-left: 25px;
+			}
+		}
+
+		a {
+			text-decoration: none;
+			font-size: 18px;
+			color: #fff;
+
+			@include tablet {
+				color: $color-text;
+			}
+		}
+
+		> li.is-active > a,
+		> li:hover > a {
+			color: $color-link;
+		}
+	}
+
+	&.is-visible .menu {
+		transform: translateX(0);
+	}
+
+
+	.menu-toggle {
+		@include mobile {
+			color: $color-text;
+			position: relative;
+			z-index: 810;
+			border: none;
+			background: none;
+			display: inline;
+			font-size: 18px;
+			outline: none;
+			white-space: nowrap;
+
+			.stripes {
+				position: relative;
+				display: inline-block;
+				width: 17px;
+				height: 14px;
+				margin-left: 8px;
+				vertical-align: middle;
+
+				&:before,
+				&:after,
+				.stripe {
+					content: "";
+					display: block;
+					position: absolute;
+					left: 0;
+					right: 0;
+					height: 2px;
+					background-color: $color-text;
+					transform-origin: 0 50%;
+				}
+
+				&:before,
+				&:after {
+					will-change: transform;
+					transition: transform 300ms;
+				}
+
+				&:before {
+					top: 0;
+				}
+
+				&:after {
+					bottom: 0;
+				}
+				
+				.stripe {
+					top: 50%;
+					transform: translateY(-50%);
+					will-change: opacity;
+					transition: opacity 300ms;
+				}
+			}
+		}
+
+		@include tablet {
+			display: none;
+		}
+	}
+	
+	&.is-visible .menu-toggle {
+		@include mobile {
+			color:  #fff;
+
+			.stripes {
+				&:before,
+				&:after {
+					background-color: #fff;
+				}
+
+				&:before {
+					transform: rotate(45deg);
+				}
+
+				&:after {
+					transform: rotate(-45deg);
+				}
+
+				.stripe {
+					opacity: 0;
+				}
+			}
+		}
+	}
+}

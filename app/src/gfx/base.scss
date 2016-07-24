@@ -1,0 +1,25 @@
+@import "vars";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $color-bg;
+	overflow-x: hidden;
+}
+
+.app {
+	max-width: $width-desktop;
+	min-height: 100vh;
+	margin: auto;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: column;
+
+	.content {
+		flex: 1;
+	}
+}

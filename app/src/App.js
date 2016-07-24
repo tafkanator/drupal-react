@@ -1,9 +1,14 @@
 import React, { PropTypes } from 'react';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 const App = (props) => (
 	<div className="app">
-		tere
-		{props.children}
+		<Header />
+		<div className="content">
+			{props.children}
+		</div>
+		<Footer />
 	</div>
 );
 

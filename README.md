@@ -1,4 +1,3 @@
-
 # Drupal-React
 
 REST application with Drupal and react

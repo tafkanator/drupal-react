@@ -24,7 +24,7 @@ module.exports = {
 			exclude: path.resolve(__dirname, 'node_modules'),
 		}, {
 			test: /\.(jpg|jpeg|gif|png|svg|ico|woff|woff2)$/,
-			loader: 'url-loader?limit=10000000000',
+			loader: `url?limit=1000000000&name=[path][name].[ext]&context=${__dirname}`,
 			exclude: path.resolve(__dirname, 'node_modules'),
 		}, {
 			test: /\.html$/,

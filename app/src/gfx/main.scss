@@ -1,3 +1,5 @@
-body {
-	background: gray;
-}
+@import "vars";
+@import "base";
+@import "typography";
+
+@import "media";

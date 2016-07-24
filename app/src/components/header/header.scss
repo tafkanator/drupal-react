@@ -1,0 +1,72 @@
+@import "../../gfx/vars.scss";
+@import "../../gfx/mixins.scss";
+
+.header {
+	position: relative;
+	height: $header-height-mobile;
+
+	// align logo and site-nav
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include tablet {
+		height: 450px;		
+		padding-top: 35px;
+		align-items: flex-start;
+	}
+
+	// add full width background
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: calc(-50vw + 50%);
+		bottom: 0;
+		width: 100vw;
+		background: url("./img/header-bg.png") no-repeat 50% 0;
+		background-size: 150%;
+		z-index: -1;
+
+		@include mobile {
+			opacity: 0.4;
+		}
+
+		@include tablet {
+			background-size: cover;
+		}
+	}
+
+	.logo {
+		margin: 0;
+
+		a {
+			display: block;
+			font-size: 0;
+			width: 166px;
+			height: 37px;
+			background: url("./img/logo.png") no-repeat;
+			background-size: contain;
+
+			@include tablet {
+				width: 176px;
+				height: 47px;
+			}
+		}
+	}
+
+	.slogan {
+		@include mobile {
+			display: none;
+		}
+		
+		@include tablet {
+			position: absolute;
+			bottom: 50px;
+			right: 0;
+			text-align: right;
+			margin: 0;
+		}
+	}
+}
