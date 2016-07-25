@@ -1,15 +1,19 @@
 const path = require('path');
 const webpack = require('webpack');
 
+const srcPath = path.resolve(__dirname, '..', 'src');
+const buildPath = path.resolve(__dirname, '..', 'build');
+
 module.exports = {
 	devtool: 'source-map',
 	entry: [
 		'webpack-dev-server/client?http://0.0.0.0:3000',
 		'webpack/hot/dev-server',
-		'./src/index.js',
+		path.join(srcPath, 'index'),
 	],
 	output: {
-		path: path.join(__dirname, 'build'),
+		path: buildPath,
+		pathinfo: true,
 		filename: 'bundle.js',
 		publicPath: '/',
 	},
@@ -33,6 +37,7 @@ module.exports = {
 		}],
 	},
 	plugins: [
+		new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"development"' }),
 		new webpack.HotModuleReplacementPlugin(),
 	],
 };

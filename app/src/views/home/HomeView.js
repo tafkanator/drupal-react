@@ -56,7 +56,7 @@ export default function HomeView() {
 
 	return (
 		<div className="view home-view">
-			<h1>Meie teenused</h1>
+			<h1>Minu teenused</h1>
 			<div className="service-list">
 				{services.map((service, index) => renderService(
 					service.title,

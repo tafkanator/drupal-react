@@ -7,17 +7,13 @@ import autobind from 'autobind-decorator';
 @autobind
 export default class SiteNav extends Component {
 
-	constructor(props) {
-		super(props);
-
-		this.state = {
-			isOpened: false,
-		};
-	}
+	state = {
+		isOpened: false,
+	};
 
 	render() {
 		const { isOpened } = this.state;
-		
+
 		const classList = classNames('site-nav', { 'is-visible': isOpened });
 		return (
 			<div className={classList}>

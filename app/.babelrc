@@ -1,7 +1,13 @@
 {
-  "presets": ["es2015", "stage-1", "react"],
+  "presets": [
+	  "babel-preset-es2015",
+	  "babel-preset-es2016",
+	  "babel-preset-react"
+  ],
   "plugins": [
 	  "babel-plugin-transform-decorators-legacy",
-	  "transform-object-rest-spread"
+	  "babel-plugin-transform-object-rest-spread",
+	  "babel-plugin-syntax-trailing-function-commas",
+	  "babel-plugin-transform-class-properties"
   ]
 }
