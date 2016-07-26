@@ -6,7 +6,6 @@
 	margin: 0 -$side-padding;
 	padding:($side-padding * 2) $side-padding;
 	background-size: cover;
-	font-weight: 400;
 	color: $color-bg;
 	text-align: center;
 
@@ -49,6 +48,14 @@
 		@include tablet {
 			margin-left: 30px;
 			margin-right: 30px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
 		};
 	}
 

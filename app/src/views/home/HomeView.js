@@ -66,6 +66,16 @@ export default function HomeView() {
 					index
 				))}
 			</div>
+
+			<article className="about">
+				<h1>Minust lähemalt</h1>
+				<p>
+					Tere! Minu nimi on Eliina Pind. Olen erialalt nii medõde kui ka ämmaemand. Hariduse omandasin Tartu
+					Tervishoiu kõrgkoolis ning hiljem ka aastaid sellel erialal tegutsenud. Hilisemalt olen ka
+					erinevatelt koolitustelt juurde õppinud massaži ning vanarahva uskumusi. Minu soov on tutvustada
+					ravimeetodeid, mis aitavad inimestel enda kehas jälle hea tunda.
+				</p>
+			</article>
 		</div>
 	);
 }
