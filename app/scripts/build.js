@@ -1,15 +1,24 @@
-const webpack = require('webpack');
-const WebpackDevServer = require('webpack-dev-server');
-const config = require('./webpack.config');
+/* eslint-disable no-console */
 
-new WebpackDevServer(webpack(config), {
-	publicPath: config.output.publicPath,
-	hot: true,
-	historyApiFallback: true,
-}).listen(3000, '0.0.0.0', (err) => {
+process.env.NODE_ENV = 'production';
+
+const rimrafSync = require('rimraf').sync;
+const path = require('path');
+const webpack = require('webpack');
+const config = require('../config/webpack.config.prod');
+
+const buildPath = path.resolve('../build');
+
+rimrafSync(buildPath);
+
+webpack(config).run((err) => {
 	if (err) {
-		return console.log(err); // eslint-disable-line no-console
+		console.error('Failed to create a production build. Reason:');
+		console.error(err.message || err);
+		process.exit(1);
 	}
 
-	return console.log('Listening at http://localhost:3000/'); // eslint-disable-line no-console
+	console.log('Successfully generated a bundle in the build folder!');
+
+	console.log('The bundle is optimized and ready to be deployed to production.');
 });

@@ -1,21 +1,19 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const srcPath = path.resolve(__dirname, '..', 'src');
 const buildPath = path.resolve(__dirname, '..', 'build');
 
 module.exports = {
+	bail: true,
 	devtool: 'source-map',
-	entry: [
-		'webpack-dev-server/client?http://0.0.0.0:3000',
-		'webpack/hot/dev-server',
-		path.join(srcPath, 'index'),
-	],
+	entry: path.join(srcPath, 'index'),
 	output: {
 		path: buildPath,
-		pathinfo: true,
-		filename: 'bundle.js',
+		filename: '[name].[chunkhash].js',
+		chunkFilename: '[name].[chunkhash].chunk.js',
 		publicPath: '/',
 	},
 	module: {
@@ -25,7 +23,7 @@ module.exports = {
 			loader: 'babel-loader',
 		}, {
 			test: /\.scss/,
-			loaders: ['style', 'css?sourceMap', 'sass?sourceMap'],
+			loader: ExtractTextPlugin.extract('style', 'css?sourceMap!sass?sourceMap'),
 			exclude: path.resolve(__dirname, 'node_modules'),
 		}, {
 			test: /\.(jpg|jpeg|gif|png|svg|woff|woff2)$/,
@@ -38,7 +36,9 @@ module.exports = {
 			inject: true,
 			template: path.resolve(__dirname, '..', 'index.template.html'),
 		}),
-		new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"development"' }),
-		new webpack.HotModuleReplacementPlugin(),
+		new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"production"' }),
+		new webpack.optimize.OccurrenceOrderPlugin(),
+		new webpack.optimize.DedupePlugin(),
+		new ExtractTextPlugin('[name].[contenthash].css'),
 	],
 };
