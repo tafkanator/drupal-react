@@ -6,6 +6,7 @@ import classNames from 'classnames';
 import autobind from 'autobind-decorator';
 
 import routes from '../../routes';
+import { services } from '../../../config/data';
 
 @autobind
 class SiteNav extends Component {
@@ -98,11 +99,11 @@ class SiteNav extends Component {
 	}
 
 	getTitle(path) {
-		switch (path) {
-			case 'meemassaas': return 'Meemassaaš';
-			case 'vana-eesti-massaas': return 'Vana-Eesti massaaš';
-			default: return path;
+		if (services[path]) {
+			return services[path].title;
 		}
+
+		return path;
 	}
 }
 
