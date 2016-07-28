@@ -1,12 +1,14 @@
 import React from 'react';
 import './header.scss';
 
+import { IndexLink } from 'react-router';
+
 import SiteNav from '../sitenav/SiteNav';
 
 const Header = () => (
 	<div className="header">
 		<h1 className="logo">
-			<a href="#">Väekas</a>
+			<IndexLink to="/">Väekas</IndexLink>
 		</h1>
 
 		<SiteNav />

@@ -2,11 +2,9 @@
 @import "../../gfx/mixins.scss";
 
 .site-nav {
-	.menu {
-		margin: 0;
-		padding: 0;
-		list-style: none;
+	font-weight: 500;
 
+	.menu {
 		@include mobile {
 			position: fixed;
 			top: 0;
@@ -29,25 +27,42 @@
 		> li {
 			margin: 5px 0;
 
+			@include mobile {
+				border-bottom: 1px solid #333;
+				padding-bottom: 5px;
+
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+
 			@include tablet {
+				position: relative;
 				display: inline-block;
-				margin-left: 25px;
+				padding-left: 25px;
+
+				// arrow
+				&.has-children > a:after {
+					content: "";
+					display: inline-block;
+					width: 12px;
+					height: 10px;
+					margin-left: 4px;
+					background: url("./img/submenu-arrow.png") no-repeat center;
+					background-size: cover;
+				}
 			}
 		}
 
 		a {
 			text-decoration: none;
-			font-size: 18px;
 			color: #fff;
+			font-size: 18px;
+			text-transform: capitalize;
 
 			@include tablet {
 				color: $color-text;
 			}
-		}
-
-		> li.is-active > a,
-		> li:hover > a {
-			color: $color-link;
 		}
 	}
 
@@ -55,6 +70,62 @@
 		transform: translateX(0);
 	}
 
+	.submenu {
+		margin: 0 0 10px;
+		padding: 0;
+
+		@include tablet {
+			position: absolute;
+			top: 99%;
+			left: 50%;
+			margin: 0;
+			padding: 10px;
+			text-align: left;
+			background: rgba(255, 255, 255, 0.8);
+			text-align: center;
+
+			// closed state
+			transform: translate(-50%, -20px);
+			opacity: 0;
+			transition: transform 300ms, opacity 300ms;
+			transition-delay: 500ms;
+			will-change: transform, opacity;
+			pointer-events: none;
+		}
+
+		li {
+			@include tablet {
+				margin: 5px 0;
+			}
+		}
+
+		a {
+			font-weight: 400;
+			font-size: 14px;
+			white-space: nowrap;
+		}
+	}
+
+	li:hover > .submenu {
+		// opened state
+		@include tablet {
+			transform: translate(-50%, 0);
+			transition-delay: 0ms;
+			opacity: 1;
+			pointer-events: auto;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		& > li.is-active > a,
+		& > li:hover > a {
+			color: $color-link;
+		}
+	}
 
 	.menu-toggle {
 		@include mobile {
@@ -67,6 +138,7 @@
 			font-size: 18px;
 			outline: none;
 			white-space: nowrap;
+			cursor: pointer;
 
 			.stripes {
 				position: relative;
@@ -102,7 +174,7 @@
 				&:after {
 					bottom: 0;
 				}
-				
+
 				.stripe {
 					top: 50%;
 					transform: translateY(-50%);
@@ -116,7 +188,7 @@
 			display: none;
 		}
 	}
-	
+
 	&.is-visible .menu-toggle {
 		@include mobile {
 			color:  #fff;

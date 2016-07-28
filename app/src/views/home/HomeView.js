@@ -1,6 +1,8 @@
 import React from 'react';
 import './home-view.scss';
 
+import { Link } from 'react-router';
+
 import imgHoneyMassage from './img/honey-massage.png';
 import imgCupTherapy from './img/cup-therapy.png';
 import imgLeechTherapy from './img/leech-therapy.png';
@@ -13,7 +15,7 @@ export default function HomeView() {
 			description:
 				`Paranda oma vereringet, leevenda liigesvalusid,
 				vähenda stressi, ravi hingamisteede haigusi, ...`,
-			link: '#',
+			link: '/teenused/meemassaas',
 			imageUrl: imgHoneyMassage,
 		},
 		{
@@ -21,7 +23,7 @@ export default function HomeView() {
 			description:
 				`Leevenda närvi-, lihas- ja liigesvalusid, ravi sporditraumasid
 				või erinevaid valusündroome, samuti unetust, halvatust, ...`,
-			link: '#',
+			link: '/teenused/kuputeraapia',
 			imageUrl: imgCupTherapy,
 		},
 		{
@@ -30,7 +32,7 @@ export default function HomeView() {
 				`Ravi südame- ja veresoondkonna haigusi ning
 				vereringkonna häireid,, neuroloogilisi haigusi,
 				mao- ja seedetrakti haigusi, ...`,
-			link: '#',
+			link: '/teenused/kaaniteraapia',
 			imageUrl: imgLeechTherapy,
 		},
 		{
@@ -38,19 +40,19 @@ export default function HomeView() {
 			description:
 				`Ravi erineviad ttervisega seotud probleeme, lõõgasta oma keha
 				ja vaimu, paranda enesetunnet, ...`,
-			link: '#',
+			link: '/teenused/vana-eesti-massaas',
 			imageUrl: imgOldEstonianMassage,
 		},
 	];
 
 	const renderService = (title, description, link, imageUrl, index) => (
 		<article className="media" key={index}>
-			<a href={link} className="media-object-wrap">
+			<Link to={link} className="media-object-wrap">
 				<img className="media-object" src={imageUrl} alt={title} />
-			</a>
+			</Link>
 			<h1 className="h2 media-title">{title}</h1>
 			<p>{description}</p>
-			<a className="media-link" href={link}>Uuri lähemalt</a>
+			<Link to={link} className="media-link">Uuri lähemalt</Link>
 		</article>
 	);
 
