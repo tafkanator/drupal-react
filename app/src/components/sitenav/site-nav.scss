@@ -71,7 +71,7 @@
 	}
 
 	.submenu {
-		margin: 0 0 10px;
+		margin: 5px 0 10px;
 		padding: 0;
 
 		@include tablet {
@@ -94,13 +94,15 @@
 		}
 
 		li {
+			margin: 0;
+
 			@include tablet {
 				margin: 5px 0;
 			}
 		}
 
 		a {
-			font-weight: 400;
+			font-weight: 300;
 			font-size: 14px;
 			white-space: nowrap;
 		}

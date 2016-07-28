@@ -3,7 +3,7 @@
 .media {
 	$content-padding: 26px;
 
-	margin-bottom: 28px;
+	margin-bottom: $side-padding;
 	padding: $content-padding;
 	background-color: $color-bg-alt;
 	text-align: center;

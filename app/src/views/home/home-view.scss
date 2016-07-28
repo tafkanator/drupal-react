@@ -10,7 +10,7 @@
 
 		.media {
 			@include tablet {
-				width: calc(50% - 14px);
+				width: calc(50% - #{$side-padding / 2});
 			};
 		}
 	}

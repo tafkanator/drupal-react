@@ -1,6 +1,6 @@
 @import "vars";
 
-@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,600);
 @font-face {
 	font-family: "French-Script-MT";
 	src: url("./fonts/french-script-mt.woff2") format("woff2"),
@@ -12,7 +12,7 @@
 body {
 	font: 16px/1.4 'Poppins', sans-serif;
 	color: $color-text;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 a {
@@ -37,4 +37,19 @@ h2, .h2 {
 	font-size: 48px;
 	line-height: 1;
 	font-weight: 500;
+}
+
+h3, .h3 {
+	font-family: Poppins, sans-serif;;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 40px 0 10px;
+}
+
+ul {
+	margin: 0 0 40px;
+
+	li {
+		margin-bottom: 10px;
+	}
 }

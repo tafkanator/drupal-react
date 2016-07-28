@@ -1,3 +1,100 @@
+@import "../../gfx/vars";
+@import "../../gfx/mixins";
+
 .service-view {
-	
+	$break-point: 700px;
+
+	@include break-min($break-point) {
+		flex: 1;
+		display: flex;
+		justify-content: space-around;
+		margin: -$side-padding 0 -60px;
+	};
+
+	.page-header {
+		margin-top: $side-padding;
+
+		@include break-max($break-point) {
+			display: flex;
+			flex-direction: column;
+			margin: 0 (-$side-padding) $side-padding;
+		}
+
+		.title {
+			@include break-min($break-point) {
+				margin-bottom: 0;
+			}
+		}
+
+		.cover-image {
+			display: block;
+			width: 100%;
+
+			@include break-max($break-point) {
+				order: 1;
+			}
+		}
+
+		.stats {
+			font-size: 105%;
+			margin-bottom: 30px;
+
+			@include break-max($break-point) {
+				margin-left: $side-padding;
+				margin-right: $side-padding;
+			}
+
+		}
+	}
+
+	.page-content {
+		@include break-min($break-point) {
+			flex: 1;
+			padding: $side-padding ($side-padding * 2) 60px 0;
+			background-color: $color-bg;
+		}
+	}
+
+	.page-sidebar {
+		padding: 20px;
+		background-color: $color-bg-alt;
+		font-size: 15px;
+
+		@include break-max($break-point) {
+			margin-top: 40px;
+		}
+
+		@include break-min($break-point) {
+			$left-margin: 20px;
+
+			width: 300px;
+
+			&:after {
+				content: "";
+				display: block;
+				background-color: $color-bg-alt;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				bottom: 0;
+				width: 50vw;
+				z-index: -1;
+			}
+		};
+
+		.sidebar-title {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		.title {
+			display: block;
+			font-weight: 500;
+		}
+	}
+
+	.booking-form {
+		position: sticky;
+		top: $side-padding;
+	}
 }

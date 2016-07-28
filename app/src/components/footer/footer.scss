@@ -3,7 +3,7 @@
 
 .footer {
 	position: relative;
-	margin: 0 -$side-padding;
+	margin: 0 (-$side-padding);
 	padding:($side-padding * 2) $side-padding;
 	background-size: cover;
 	color: $color-bg;

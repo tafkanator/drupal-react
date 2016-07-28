@@ -2,6 +2,7 @@ import React from 'react';
 import './home-view.scss';
 
 import { Link } from 'react-router';
+import Image from '../../components/Image';
 
 import { services, pages } from '../../../config/data';
 
@@ -27,7 +28,7 @@ const HomeView = () => {
 				{getFormattedServiceList().map((service) => (
 					<article className="media" key={service.key}>
 						<Link to={service.link} className="media-object-wrap">
-							<img className="media-object" src={service.imageSrc} alt={service.title} />
+							<Image className="media-object" src={service.imageSrc} alt={service.title} />
 						</Link>
 						<h1 className="h2 media-title">{service.title}</h1>
 						<p>{service.description}</p>
