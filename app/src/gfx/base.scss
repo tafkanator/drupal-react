@@ -19,8 +19,30 @@ body {
 	display: flex;
 	flex-direction: column;
 
-	.content {
+	.content-wrap {
 		flex: 1;
+		position: relative;
+	}
+
+	.content {
 		padding: 20px 0 60px;
 	}
+}
+
+.page-transition-enter {
+	opacity: 0.1;
+	will-change: opacity;
+}
+
+.page-transition-enter.page-transition-enter-active {
+	opacity: 1;
+	transition: opacity $PageTransitionTime;
+
+}
+
+.page-transition-leave {
+	display: none;
+}
+
+.page-transition-leave.page-transition-leave-active {
 }

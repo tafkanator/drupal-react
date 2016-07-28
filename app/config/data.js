@@ -62,7 +62,7 @@ export const services = {
 export const pages = {
 	tutvustus: {
 		title: 'Tutvusus',
-		summary: 'Tere! Minu nimi on Eliina Pind. Olen erialalt nii medõde kui ka ämmaemand. Hariduse omandasin Tartu Tervishoiu kõrgkoolis ning hiljem ka aastaid sellel erialal tegutsenud. ',
+		summary: 'Tere! Minu nimi on Eliina Pind. Olen erialalt nii medõde kui ka ämmaemand. Hariduse omandasin Tartu Tervishoiu kõrgkoolis ning hiljem ka aastaid sellel erialal tegutsenud...',
 		content: (
 			<div className="page-content">
 				Tutvustuse lehe sisu
