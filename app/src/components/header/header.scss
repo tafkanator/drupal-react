@@ -11,7 +11,7 @@
 	align-items: center;
 
 	@include tablet {
-		height: 450px;		
+		height: 450px;
 		padding-top: 35px;
 		align-items: flex-start;
 	}
@@ -60,7 +60,7 @@
 		@include mobile {
 			display: none;
 		}
-		
+
 		@include tablet {
 			position: absolute;
 			bottom: 50px;
@@ -68,5 +68,11 @@
 			text-align: right;
 			margin: 0;
 		}
+	}
+
+	&.is-expanded .slogan {
+		@include tablet {
+			display: block;
+		};
 	}
 }

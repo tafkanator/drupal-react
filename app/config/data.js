@@ -169,10 +169,10 @@ export const services = {
 export const pages = {
 	tutvustus: {
 		title: 'Tutvusus',
-		summary: 'Minu nimi on Eliina, kuid mind teatakse ka Liinuna. Olen hariduselt ämmaemand. Reaalselt olen töötanud aastaid rohkem medõena, nii Eestis kui Soomes. Töökogemust meditsiini alal on kokku seitse aastat. Huvi aga pärimusmeditsiini vastu on mul olnud juba pikka aega ja tahtmine haigla keskkonnast välja pääseda näris hinge, seega võtsingi vastu otsuse, et ei istu enam käed rüpes ning lähen end selles valdkonnas täiendama. Oma uutest oskustest lähtuvalt 2015. aasta märtsi kuu alguses sündis OÜ Väekas, mille alt olen aktiivselt pakkunud vana-eesti massaaži ning pakutavaid teenuseid on ajapikku lisandunud ja lisandub veelgi. Soov inimesi aidata ja neile head teha on minus alati olemas olnud, seetõttu ka sellised erialavalikud ja tegutsemine',
+		summary: 'Minu nimi on Eliina, kuid mind teatakse ka Liinuna. Olen hariduselt ämmaemand. Reaalselt olen töötanud aastaid rohkem medõena, nii Eestis kui Soomes. Töökogemust meditsiini alal on kokku seitse aastat ...',
 		content: (
 			<div className="page-content">
-				Tutvustuse lehe sisu
+				<p>Minu nimi on Eliina, kuid mind teatakse ka Liinuna. Olen hariduselt ämmaemand. Reaalselt olen töötanud aastaid rohkem medõena, nii Eestis kui Soomes. Töökogemust meditsiini alal on kokku seitse aastat. Huvi aga pärimusmeditsiini vastu on mul olnud juba pikka aega ja tahtmine haigla keskkonnast välja pääseda näris hinge, seega võtsingi vastu otsuse, et ei istu enam käed rüpes ning lähen end selles valdkonnas täiendama. Oma uutest oskustest lähtuvalt 2015. aasta märtsi kuu alguses sündis OÜ Väekas, mille alt olen aktiivselt pakkunud vana-eesti massaaži ning pakutavaid teenuseid on ajapikku lisandunud ja lisandub veelgi. Soov inimesi aidata ja neile head teha on minus alati olemas olnud, seetõttu ka sellised erialavalikud ja tegutsemine</p>
 			</div>
 		),
 	},

@@ -73,6 +73,7 @@
 	.submenu {
 		margin: 5px 0 10px;
 		padding: 0;
+		z-index: 20;
 
 		@include tablet {
 			position: absolute;
@@ -88,7 +89,6 @@
 			transform: translate(-50%, -20px);
 			opacity: 0;
 			transition: transform 300ms, opacity 300ms;
-			transition-delay: 500ms;
 			will-change: transform, opacity;
 			pointer-events: none;
 		}
@@ -112,7 +112,6 @@
 		// opened state
 		@include tablet {
 			transform: translate(-50%, 0);
-			transition-delay: 0ms;
 			opacity: 1;
 			pointer-events: auto;
 		}

@@ -19,7 +19,8 @@ const ServiceView = (props) => {
 					<h1 className="title">{service.title}</h1>
 					<p className="stats">
 						Hind: <strong>{service.price}</strong><br />
-						Kestvus: <strong>{service.duration}</strong>
+						Kestvus: <strong>{service.duration}</strong><br />
+						<strong><a href="#broneeri" className="cta">Broneeri aeg</a></strong>
 					</p>
 				</div>
 
@@ -27,7 +28,7 @@ const ServiceView = (props) => {
 			</div>
 
 			<div className="page-sidebar">
-				<div className="booking-form">
+				<div id="broneeri" className="booking-form">
 					<h2 className="sidebar-title">Broneeri aeg</h2>
 					<p>
 						<span className="title">Telefon:</span>

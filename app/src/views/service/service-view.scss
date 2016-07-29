@@ -43,7 +43,12 @@
 				margin-left: $side-padding;
 				margin-right: $side-padding;
 			}
+		}
 
+		.cta {
+			@include tablet {
+				display: none;
+			};
 		}
 	}
 

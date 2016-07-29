@@ -1,14 +1,16 @@
 import React, { PropTypes } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { withRouter } from 'react-router';
+import classNames from 'classnames';
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
 
-const PageTransitionTime = 500; // ms
+const PageTransitionTime = 600; // ms
 
 const App = (props) => (
-	<div className="app">
+	<div className={classNames('app', { 'is-front': props.router.isActive('/', true) })}>
 		<Header />
 		<ReactCSSTransitionGroup
 			component="div"
@@ -31,6 +33,9 @@ App.propTypes = {
 	location: PropTypes.shape({
 		pathname: PropTypes.string.isRequired,
 	}).isRequired,
+	router: PropTypes.shape({
+		isActive: PropTypes.func.isRequired,
+	}).isRequired,
 };
 
-export default App;
+export default withRouter(App);
