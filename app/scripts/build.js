@@ -9,7 +9,9 @@ const config = require('../config/webpack.config.prod');
 
 const buildPath = path.resolve('../build');
 
-rimrafSync(buildPath);
+// Remove all content but keep the directory so that
+// if you're in it, you don't end up in Trash
+rimrafSync(`${buildPath}/*`);
 
 webpack(config).run((err) => {
 	if (err) {

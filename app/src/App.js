@@ -6,7 +6,6 @@ import classNames from 'classnames';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
-
 const PageTransitionTime = 600; // ms
 
 const App = (props) => (
