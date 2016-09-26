@@ -22,18 +22,18 @@ body {
 	flex-direction: column;
 
 	.content-wrap {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
+		flex-grow: 1;
+		//display: flex;
+		//flex-direction: column;
 		position: relative;
 		background-color: $color-bg;
 
 		@include tablet {
 			// collapsed state
-			margin-bottom: -330px;
-			transform: translateY(-330px);
+			//margin-bottom: -330px;
+			//transform: translateY(-330px);
 			//transition: transform $front-page-side-time cubic-bezier(.41,.02,.28,.94);
-			will-change: transform;
+			//will-change: transform;
 
 			// full width bg
 			&:after {
@@ -53,8 +53,8 @@ body {
 
 	&.is-front .content-wrap {
 		@include tablet {
-			margin-bottom: 0;
-			transform: translateY(0);
+			//margin-bottom: 0;
+			//transform: translateY(0);
 		}
 	}
 

@@ -11,7 +11,7 @@
 	align-items: center;
 
 	@include tablet {
-		height: 450px;
+		height: 120px;
 		padding-top: 35px;
 		align-items: flex-start;
 	}
@@ -39,7 +39,9 @@
 	}
 
 	.logo {
-		margin: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-right: auto;
 
 		a {
 			display: block;
@@ -67,12 +69,17 @@
 			right: 0;
 			text-align: right;
 			margin: 0;
+			display: none;
 		}
 	}
+}
 
-	&.is-expanded .slogan {
-		@include tablet {
+.is-front .header {
+	@include tablet {
+		height: 450px;
+
+		.slogan {
 			display: block;
-		};
+		}
 	}
 }
