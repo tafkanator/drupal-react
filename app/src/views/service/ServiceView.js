@@ -17,11 +17,18 @@ const ServiceView = (props) => {
 						<Image className="cover-image" src={service.coverImageMedium} alt={service.title} />
 					) : null}
 					<h1 className="title">{service.title}</h1>
-					<p className="stats">
-						Hind: <strong>{service.price}</strong><br />
-						Kestvus: <strong>{service.duration}</strong><br />
-						<strong><a href="#broneeri" className="cta">Broneeri aeg</a></strong>
-					</p>
+
+					{service.priceList.map((item, index) => (
+						<p className="stats" key={index}>
+							{service.priceList.length > 1 ? (
+								<span><strong>{item.title}</strong><br /></span>
+							) : null}
+							Hind: <strong>{item.price}</strong><br />
+							Kestvus: <strong>{item.duration}</strong><br />
+							<strong><a href="#broneeri" className="cta">Broneeri aeg</a></strong>
+						</p>
+					))}
+
 				</div>
 
 				{service.content}
@@ -36,7 +43,9 @@ const ServiceView = (props) => {
 					</p>
 					<p>
 						<span className="title">{service.locations.length > 1 ? 'Asukohad' : 'Asukoht'}:</span>
-						{service.locations.join(', ')}
+						{service.locations.map((location, index) => (
+							<span className="service-location" key={index}>{location}</span>
+						))}
 					</p>
 					<p>
 						<span className="title">Tasumine:</span>

@@ -32,7 +32,7 @@ body {
 			// collapsed state
 			margin-bottom: -330px;
 			transform: translateY(-330px);
-			transition: transform $front-page-side-time cubic-bezier(.41,.02,.28,.94);
+			//transition: transform $front-page-side-time cubic-bezier(.41,.02,.28,.94);
 			will-change: transform;
 
 			// full width bg

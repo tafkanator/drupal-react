@@ -1,0 +1,30 @@
+@import "../../gfx/vars";
+@import "../../gfx/mixins";
+
+.page-view {
+	.content-illustration {
+
+
+		width: 100%;
+
+		@include break-min($width-tablet) {
+			float: left;
+			margin: 0 20px 10px;
+			width: auto;
+		};
+	}
+
+	.location-map {
+		$break-point: 750px;
+
+		iframe {
+			width: 100% !important;
+		}
+
+		@include break-min($break-point) {
+			display: inline-block;
+			width: 50%;
+			padding: 20px;
+		}
+	}
+}

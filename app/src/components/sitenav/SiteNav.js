@@ -100,7 +100,7 @@ class SiteNav extends Component {
 
 	getTitle(path) {
 		if (services[path]) {
-			return services[path].title;
+			return services[path].menuTitle || services[path].title;
 		}
 
 		return path;

@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import './page-view.scss';
 
 import { pages } from '../../../config/data';
 
