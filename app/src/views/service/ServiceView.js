@@ -53,7 +53,7 @@ const ServiceView = (props) => {
 					</p>
 					<p>
 						Saaja: OÜ Väekas<br />
-						Konto nr: EE00123456789<br />
+						Konto nr: EE692200221061510389<br />
 						Selgitus: Teile väljastatud arve number
 					</p>
 				</div>

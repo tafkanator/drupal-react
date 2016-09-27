@@ -438,6 +438,7 @@ export const pages = {
 					OÜ Väekas <br />
 					Reg nr: 12810193<br />
 					Aadress: Kareda vald, Järvamaa<br />
+					Konto nr: EE692200221061510389<br />
 					E-mail: <a className="row" href="mailto:info@rahvaravi.ee">info@rahvaravi.ee</a><br />
 					Telefon: <a className="row" href="tel:+37255633544">5563 3544</a><br />
 				</p>
