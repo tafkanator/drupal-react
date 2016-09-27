@@ -2,21 +2,21 @@
 
 process.env.NODE_ENV = 'production';
 
-const fs = require('fs-extra');
+const fs = require('fs');
 const rimrafSync = require('rimraf').sync;
 const path = require('path');
 const webpack = require('webpack');
 const config = require('../config/webpack.config.prod');
 
-const buildPath = path.resolve('./build');
+const buildPath = path.resolve(__dirname, '../build');
 
 // Remove all content but keep the directory so that
 // if you're in it, you don't end up in Trash
 rimrafSync(`${buildPath}/*`);
 
 // copy static files
-fs.createReadStream('./static/.htaccess').pipe(fs.createWriteStream(`${buildPath}/.htaccess`));
-fs.createReadStream('./static/robots.txt').pipe(fs.createWriteStream(`${buildPath}/robots.txt`));
+fs.createReadStream(path.resolve('./static/.htaccess')).pipe(fs.createWriteStream(`${buildPath}/.htaccess`));
+fs.createReadStream(path.resolve('./static/robots.txt')).pipe(fs.createWriteStream(`${buildPath}/robots.txt`));
 
 webpack(config).run((err) => {
 	if (err) {

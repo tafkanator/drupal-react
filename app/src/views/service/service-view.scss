@@ -59,6 +59,10 @@
 			padding: $side-padding ($side-padding * 2) 60px 0;
 			background-color: $color-bg;
 		}
+
+		a {
+			word-break: break-all;
+		}
 	}
 
 	.page-sidebar {
