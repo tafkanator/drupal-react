@@ -31,7 +31,7 @@
 			width: 100%;
 
 			@include break-max($break-point) {
-				order: 1;
+				order: 2;
 			}
 		}
 
@@ -42,6 +42,7 @@
 			@include break-max($break-point) {
 				margin-left: $side-padding;
 				margin-right: $side-padding;
+				order: 3;
 			}
 		}
 

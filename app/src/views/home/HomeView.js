@@ -23,7 +23,7 @@ const HomeView = () => {
 
 	return (
 		<div className="view home-view">
-			<h1>Minu teenused</h1>
+			<h1>Meie teenused</h1>
 			<div className="service-list">
 				{getFormattedServiceList().map((service) => (
 					<article className="media" key={service.key}>
@@ -38,7 +38,7 @@ const HomeView = () => {
 			</div>
 
 			<article className="about">
-				<h1>Minust lähemalt</h1>
+				<h1>Meist lähemalt</h1>
 				<p>{aboutInfo.summary}</p>
 				<p>
 					<Link to="/tutvustus">Loe kogu tutvustust</Link>

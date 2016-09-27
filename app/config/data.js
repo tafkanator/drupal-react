@@ -10,6 +10,74 @@ import imgOldEstonianMassage from './img/old-estonian-massage.png';
 import imgAboutMe from './img/about-me.jpg';
 
 export const services = {
+	'vana-eesti-massaas': {
+		title: 'Vana-Eesti massaaž',
+		priceList: [{
+			title: 'Vana-Eesti massaaž',
+			price: '25€',
+			duration: '90 minutit',
+		}],
+		summary: 'Aita lõõgastada keha sundasenditest, lihaspingetest, stressist ning toeta muude tervisehädade korral, ...',
+		coverImageSmall: imgOldEstonianMassage,
+		coverImageMedium: imgOldEstonianMassage,
+		locations: [
+			'Paides Pärnu tn 75',
+			'Roosna-Alliku vallamaja',
+			'Kilplaste Koda Müüsleris',
+			'Albu küladetuba Kaalepis',
+		],
+		content: (
+			<div className="service-content">
+				<h2 className="h3">Mis on vana-eesti massaaž?</h2>
+				<p>Vana-Eesti massaaži teatakse ka soonetasumise nime all. Soonetasumise võtteid on edasi kantud enamasti suuliselt, sest Eestis levis kirjakeel üpriski hilja. Igas peres tehti massaaži omal ajal natuke erinevalt. Selle massaaži puhul on tegemist teraapiaga, milles on ühendatud meie esivanemate vanad tarkused ja tänapäeva teadmised. Soonetasumisel mõjutatakse põhiliselt erinevaid lihasgruppe, liigeseid, siseorganeid, vere- ja lümfiringet, närvisüsteemi ning nahka. Lühidalt öeldes, tegemist on kogu keha massaažiga, mida tehakse pealaest jalatallani ning mõlemalt poolt. Massaaž ei ole ainult mingi tegevus, see on keha stimuleerimine, et anda tagasi või hoida tasakaalu ja väge. See on meie esivanemate ürgne tarkus teha teistele head.</p>
+				<h2 className="h3">Mille poolest erineb vana-eesti massaaž klassikalisest rootsi massaažist?</h2>
+				<p>Klassikalist rootsi massaaži tehakse massaažilaual ning ainukeseks rõivaks on kliendil seljas enamasti aluspüksid. Vana-eesti massaaži tehakse aga põrandal matil või madratsil läbi sobivate riiete, ning piirkondades, kuhu massaaži parasjagu ei tehta, on soojendamas tekike või rätik. Erinevalt klassikalisest massaažist saab massaaži tegija kasutada enda keharaskust ning peale oma labakäte ka muid kehaosi nagu randmeid, küünarvarsi, küünarnukke, põlvi või jalgu. Klassikalise massaaži pakkujad teevad tihti pooletunniseid kuni tunniseid seansse vaid mõnele kehaosale, vana-eesti massaažis aga lähenetakse organismile kui tervikule, massaaž hõlmab kogu keha pealaest jalatallani ning nii kõhu- kui selja poolt.</p>
+				<h2 className="h3">Ettevalmistus massaaži tulekul:</h2>
+				<p>Sobivaks riietuseks masseeritaval on õhukesed, näiteks spordirõivad, mis pole soovitavalt liiga karedad ega libedad. Naisterahvad võivad kasutada pluusi all sportlikku rinnahoidjat või üldse mitte midagi. Hea on, kui massaaži ajaks oleksid kõik ehted ära võetud. Keha võiks kinnitada hiljemalt tund enne massaaži, et selili ja kõhuli survet avaldades ebamugavustunnet vältida. Hea on käia ka enne WC-s ära (loomulikult vajadusel võib seda kasutada ka vahepeal), sest massaaži tehes viiakse inimene sümpaatilisest olekust parasümpaatilisse, et lõdvestus oleks maksimaalne: tuleks välistada ka kõikvõimalikud segavad faktorid (üleliigsed inimesed, kes võivad lärmi teha või kõnetada, telefonid tuleks hääletuks panna jms). Enne massaaži tegemist vesteldakse ning selgitatakse välja, millised on põhjused miks abi otsitakse ning et välistada vastunäidustused. Probleemsele piirkonnale saab vajadusel rohkem tähelepanu pöörata. See aga eeldab seda, et klient tuleb ideaalis esmakordselt 10 või isegi 15 minutit varem kohale, et need väljaselgitamised ei võtaks massaaži tegemise aega liiga palju ära.</p>
+				<h2 className="h3">Vana-eesti massaaž - kellele ja miks? Kas on vastunäidustusi?</h2>
+				<p>Vana-Eesti massaaž on mõeldud eelkõige täiskasvanule, aga rasedatele, beebidele ja lastele pole see ehk kõige sobivam, neile on omad massaažid. Enamasti on inimesel massaaži pöördumisel mingi näidustus või ootus - kas tervisega seotud probleem või lihtsalt soov lõõgastuda.</p>
+				<h2 className="h3">Vana-eesti massaaž - kellele ja miks? Kas on vastunäidustusi?</h2>
+				<p>Vana-Eesti massaaž on mõeldud eelkõige täiskasvanule, beebidele ja lastele pole see ehk kõige sobivam, neile on omad massaažid. Enamasti on inimesel massaaži pöördumisel mingi näidustus või ootus - kas tervisega seotud probleem või lihtsalt soov lõõgastuda.</p>
+
+				<h2 className="h3">Mille puhul aitab?</h2>
+				<ul>
+					<li>aeglane vere- ja lümfiringe, verevarustushäired</li>
+					<li>kergelt ärrituv närvisüsteem, stress, unehäired</li>
+					<li>lihaspinged, lihaste valulikkus, liigesliikuvuse vähenemine</li>
+					<li>raskendatud hingamine</li>
+					<li>kerge vererõhu tõus</li>
+					<li>vedelike ja jääkainete kogunemine organismi</li>
+					<li>aeglustunud soolte peristaltika</li>
+					<li>pingepeavalu</li>
+					<li>naha väsinud ilme, kortsude tekkimine ja naha kuivus</li>
+					<li>immuunsüsteemi nõrkus (v.a HIV ja AIDS)</li>
+					<li>väsinud kehahoiak, rühivead</li>
+					<li>vaimne tasakaalutus, väsimus vaimsest tööst</li>
+					<li>enesetunde langus</li>
+				</ul>
+
+				<h2 className="h3">Millal vältida?</h2>
+				<ul>
+					<li>ägedad südamehäired</li>
+					<li>liiga kõrge, madal või ebastabiilne vererõhk</li>
+					<li>traumad, lahtised haavad</li>
+					<li>ägedad põletikulised protsessid (palavikuga kulgevad)</li>
+					<li>ägedad nahahaigused</li>
+					<li>nakkushaigused (sh tuberkuloos, hepatiit)</li>
+					<li>ägedad organite puudulikkused</li>
+					<li>komplitseeritud veenilaiendid (ei saa teha lokaalselt)</li>
+					<li>vähk ja kasvajad</li>
+					<li>suured sünnimärgid (ei saa teha lokaalselt)</li>
+					<li>suurenenud trombioht (gangreen, infarkt jms)</li>
+					<li>kilpnäärmehaigused (ravimata)</li>
+					<li>alkoholi- ja narkojoove</li>
+					<li>raseduse ajal</li>
+				</ul>
+
+				<p>Kui inimesele on tehtud operatsioon, peaks olema massaaži tegemise ajaks möödunud vähemalt kuus kuud.</p>
+			</div>
+		),
+	},
 	'meemassaas': {
 		title: 'Meemassaaž',
 		priceList: [{
@@ -47,7 +115,7 @@ export const services = {
 					<li>Normaliseerib siseelundite tööd</li>
 					<li>Vähendab peavaluhoogusid, sh migreeni</li>
 					<li>Leevendab kroonilisi liigespõletikke</li>
-					<li>Osteporoosi puhul ja selle ennetamiseks</li>
+					<li>Osteoporoosi puhul ja selle ennetamiseks</li>
 					<li>Üleüldine väsimus (mitte kurnatus), stress ja depressioon</li>
 					<li>Parandab üldiselt immuunsüsteemi ja energeetikat</li>
 					<li>Reguleerib soolestiku tööd</li>
@@ -131,7 +199,7 @@ export const services = {
 			'Kilplaste Koda Müüsleris (ainult kuputeraapia)',
 			'Albu küladetuba Kaalepis (ainult kuputeraapia)',
 		],
-		summary: 'Leevenda närvi-, lihas- ja liigesvalusid, ravi sporditraumasid või erinevaid valusündroome, samuti unetust, halvatust, ...',
+		summary: 'Leevenda närvi-, lihas- ja liigesvalusid, ravi sporditraumasid või erinevaid valusündroome, samuti unetust, paranda naha toonust, ...',
 		coverImageSmall: imgCupTherapy,
 		coverImageMedium: imgCupTherapy,
 		content: (
@@ -205,7 +273,7 @@ export const services = {
 			price: '5€ kaan + töötasu 15€',
 			duration: '60-90 minutit',
 		}],
-		summary: 'Ravi südame- ja veresoondkonna haigusi ning vereringkonna häireid, neuroloogilisi haigusi, mao- ja seedetrakti haigusi, ...',
+		summary: 'Toeta südame- ja veresoondkonna haigusi ning vereringe häireid, neuroloogilisi haigusi, mao- ja seedetrakti haigusi, ...',
 		coverImageSmall: imgLeechTherapy,
 		coverImageMedium: imgLeechTherapy,
 		locations: [
@@ -304,84 +372,20 @@ export const services = {
 			</div>
 		),
 	},
-	'vana-eesti-massaas': {
-		title: 'Vana-Eesti massaaž',
-		priceList: [{
-			title: 'Vana-Eesti massaaž',
-			price: '25€',
-			duration: '90 minutit',
-		}],
-		summary: 'Ravi erineviad tervisega seotud probleeme, lõõgasta oma keha ja vaimu, paranda enesetunnet, ...',
-		coverImageSmall: imgOldEstonianMassage,
-		coverImageMedium: imgOldEstonianMassage,
-		locations: [
-			'Paides Pärnu tn 75',
-			'Roosna-Alliku vallamaja',
-			'Kilplaste Koda Müüsleris',
-			'Albu küladetuba Kaalepis',
-		],
-		content: (
-			<div className="service-content">
-				<h2 className="h3">Mis on vana-eesti massaaž?</h2>
-				<p>Vana-Eesti massaaži teatakse ka soonetasumise nime all. Soonetasumise võtteid on edasi kantud enamasti suuliselt, sest Eestis levis kirjakeel üpriski hilja. Igas peres tehti massaaži omal ajal natuke erinevalt. Selle massaaži puhul on tegemist teraapiaga, milles on ühendatud meie esivanemate vanad tarkused ja tänapäeva teadmised. Soonetasumisel mõjutatakse põhiliselt erinevaid lihasgruppe, liigeseid, siseorganeid, vere- ja lümfiringet, närvisüsteemi ning nahka. Lühidalt öeldes, tegemist on kogu keha massaažiga, mida tehakse pealaest jalatallani ning mõlemalt poolt. Massaaž ei ole ainult mingi tegevus, see on keha stimuleerimine, et anda tagasi või hoida tasakaalu ja väge. See on meie esivanemate ürgne tarkus teha teistele head.</p>
-				<h2 className="h3">Mille poolest erineb vana-eesti massaaž klassikalisest rootsi massaažist?</h2>
-				<p>Klassikalist rootsi massaaži tehakse massaažilaual ning ainukeseks rõivaks on kliendil seljas enamasti aluspüksid. Vana-eesti massaaži tehakse aga põrandal matil või madratsil läbi sobivate riiete, ning piirkondades, kuhu massaaži parasjagu ei tehta, on soojendamas tekike või rätik. Erinevalt klassikalisest massaažist saab massaaži tegija kasutada enda keharaskust ning peale oma labakäte ka muid kehaosi nagu randmeid, küünarvarsi, küünarnukke, põlvi või jalgu. Klassikalise massaaži pakkujad teevad tihti pooletunniseid kuni tunniseid seansse vaid mõnele kehaosale, vana-eesti massaažis aga lähenetakse organismile kui tervikule, massaaž hõlmab kogu keha pealaest jalatallani ning nii kõhu- kui selja poolt.</p>
-				<h2 className="h3">Ettevalmistus massaaži tulekul:</h2>
-				<p>Sobivaks riietuseks masseeritaval on õhukesed, näiteks spordirõivad, mis pole soovitavalt liiga karedad ega libedad. Naisterahvad võivad kasutada pluusi all sportlikku rinnahoidjat või üldse mitte midagi. Hea on, kui massaaži ajaks oleksid kõik ehted ära võetud. Keha võiks kinnitada hiljemalt tund enne massaaži, et selili ja kõhuli survet avaldades ebamugavustunnet vältida. Hea on käia ka enne WC-s ära (loomulikult vajadusel võib seda kasutada ka vahepeal), sest massaaži tehes viiakse inimene sümpaatilisest olekust parasümpaatilisse, et lõdvestus oleks maksimaalne: tuleks välistada ka kõikvõimalikud segavad faktorid (üleliigsed inimesed, kes võivad lärmi teha või kõnetada, telefonid tuleks hääletuks panna jms). Enne massaaži tegemist vesteldakse ning selgitatakse välja, millised on põhjused miks abi otsitakse ning et välistada vastunäidustused. Probleemsele piirkonnale saab vajadusel rohkem tähelepanu pöörata. See aga eeldab seda, et klient tuleb ideaalis esmakordselt 10 või isegi 15 minutit varem kohale, et need väljaselgitamised ei võtaks massaaži tegemise aega liiga palju ära.</p>
-				<h2 className="h3">Vana-eesti massaaž - kellele ja miks? Kas on vastunäidustusi?</h2>
-				<p>Vana-Eesti massaaž on mõeldud eelkõige täiskasvanule, aga rasedatele, beebidele ja lastele pole see ehk kõige sobivam, neile on omad massaažid. Enamasti on inimesel massaaži pöördumisel mingi näidustus või ootus - kas tervisega seotud probleem või lihtsalt soov lõõgastuda.</p>
-				<h2 className="h3">Vana-eesti massaaž - kellele ja miks? Kas on vastunäidustusi?</h2>
-				<p>Vana-Eesti massaaž on mõeldud eelkõige täiskasvanule, beebidele ja lastele pole see ehk kõige sobivam, neile on omad massaažid. Enamasti on inimesel massaaži pöördumisel mingi näidustus või ootus - kas tervisega seotud probleem või lihtsalt soov lõõgastuda.</p>
-
-				<h2 className="h3">Mille puhul aitab?</h2>
-				<ul>
-					<li>aeglane vere- ja lümfiringe, verevarustushäired</li>
-					<li>kergelt ärrituv närvisüsteem, stress, unehäired</li>
-					<li>lihaspinged, lihaste valulikkus, liigesliikuvuse vähenemine</li>
-					<li>raskendatud hingamine</li>
-					<li>kerge vererõhu tõus</li>
-					<li>vedelike ja jääkainete kogunemine organismi</li>
-					<li>aeglustunud soolte peristaltika</li>
-					<li>pingepeavalu</li>
-					<li>naha väsinud ilme, kortsude tekkimine ja naha kuivus</li>
-					<li>immuunsüsteemi nõrkus (v.a HIV ja AIDS)</li>
-					<li>väsinud kehahoiak, rühivead</li>
-					<li>vaimne tasakaalutus, väsimus vaimsest tööst</li>
-					<li>enesetunde langus</li>
-				</ul>
-
-				<h2 className="h3">Millal vältida?</h2>
-				<ul>
-					<li>ägedad südamehäired</li>
-					<li>liiga kõrge, madal või ebastabiilne vererõhk</li>
-					<li>traumad, lahtised haavad</li>
-					<li>ägedad põletikulised protsessid (palavikuga kulgevad)</li>
-					<li>ägedad nahahaigused</li>
-					<li>nakkushaigused (sh tuberkuloos, hepatiit)</li>
-					<li>ägedad organite puudulikkused</li>
-					<li>komplitseeritud veenilaiendid (ei saa teha lokaalselt)</li>
-					<li>vähk ja kasvajad</li>
-					<li>suured sünnimärgid (ei saa teha lokaalselt)</li>
-					<li>suurenenud trombioht (gangreen, infarkt jms)</li>
-					<li>kilpnäärmehaigused (ravimata)</li>
-					<li>alkoholi- ja narkojoove</li>
-					<li>raseduse ajal</li>
-				</ul>
-
-				<p>Kui inimesele on tehtud operatsioon, peaks olema massaaži tegemise ajaks möödunud vähemalt kuus kuud.</p>
-			</div>
-		),
-	},
 };
 
 export const pages = {
 	tutvustus: {
 		title: 'Tutvusus',
-		summary: 'Minu nimi on Eliina, kuid mind teatakse ka Liinuna. Olen hariduselt ämmaemand. Reaalselt olen töötanud aastaid rohkem medõena, nii Eestis kui Soomes. Töökogemust meditsiini alal on kokku seitse aastat ...',
+		summary: 'OÜ Väekas nime all tegutseb Eesti loodusterapeut Eliina Tammehoid, kes kirjeldab enda tegemisi järgmiselt ...',
 		content: (
 			<div className="page-content">
 				<img src={imgAboutMe} alt="Eliina" className="content-illustration" />
-				<p>Minu nimi on Eliina, kuid mind teatakse ka Liinuna. Olen hariduselt ämmaemand. Reaalselt olen töötanud aastaid rohkem medõena, nii Eestis kui Soomes. Töökogemust meditsiini alal on kokku seitse aastat. Huvi aga pärimusmeditsiini vastu on mul olnud juba pikka aega ja tahtmine haigla keskkonnast välja pääseda näris hinge, seega võtsingi vastu otsuse, et ei istu enam käed rüpes ning lähen end selles valdkonnas täiendama. Oma uutest oskustest lähtuvalt 2015. aasta märtsi kuu alguses sündis OÜ Väekas, mille alt olen aktiivselt pakkunud vana-eesti massaaži ning pakutavaid teenuseid on ajapikku lisandunud ja lisandub veelgi. Soov inimesi aidata ja neile head teha on minus alati olemas olnud, seetõttu ka sellised erialavalikud ja tegutsemine</p>
+				<p>OÜ Väekas nime all tegutseb Eesti loodusterapeut Eliina Tammehoid, kes kirjeldab enda tegemisi järgmiselt:</p>
+				<p>Olen hariduselt ämmaemand, kuid olen töötanud aastaid ka medõena, nii Eestis kui Soomes. Töökogemust meditsiinis on mul eelnevalt umbes seitse aastat. Huvi aga rahvaravi vastu on olnud juba pikka aega ja seega võtsingi aastaid tagasi vastu otsuse, et ei istu enam käed rüpes ning läksin end selles valdkonnas täiendama.</p>
+				<p>Oma uutest oskustest lähtuvalt sündis 2015. aasta märtsis OÜ Väekas, mille alt olen aktiivselt pakkunud soonetasumist. Pakutavaid rahvaravi teenuseid on ajapikku lisandunud veelgi ning klientide vajadusest lähtuvalt nõustan neid, mida nad saavad veel ise oma tervise heaks ära teha.</p>
+				<p>Olen osalenud väekate teenuste ja toodete tutvustamiseks erinevatel laatadel, tervisepäevadel ja avatud talude päeval, minu tegemistest on kirjutatud mitmeid artikleid, on tehtud raadiointervjuu ja kutsutud veel mujalegi. Seega soov inimesi aidata ja neile head teha on minus alati olemas olnud, seetõttu ka sellised erialavalikud ja tegutsemine. Püüan anda inimestele tagasi nende valikuvõimalused ja vastutuse nende endi tervise eest.</p>
+				<p>Rahvaravi on väga hea vahend oma tervise hoidmiseks ja parandamiseks kas siis iseseisva nähtusena või klassikalise meditsiini täienduseks – see valik jääb aga juba inimese enda otsutada.</p>
 			</div>
 		),
 	},
@@ -389,6 +393,7 @@ export const pages = {
 		title: 'Kontakt',
 		content: (
 			<div className="page-content">
+				<p>Teenuste asukohad on toodud all kaadi peal välja kuid kokkuleppel võin tulla ka teie koju või töökohta.</p>
 				<div className="location-map">
 					<h2 className="h3">Pärnu 75, Paide</h2>
 					<iframe
@@ -422,7 +427,7 @@ export const pages = {
 				<div className="location-map">
 					<h2 className="h3">Albu küladetuba Kaalepis</h2>
 					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2049.4048508432907!2d25.680851316367445!3d59.09215798157653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDA1JzMxLjgiTiAyNcKwNDAnNTguOSJF!5e0!3m2!1sen!2see!4v1474903643126"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1024.6890714667097!2d25.683525300670226!3d59.092604998371584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDA1JzMzLjQiTiAyNcKwNDEnMDMuMCJF!5e0!3m2!1set!2see!4v1474970547587"
 						width="400"
 						height="300"
 						frameBorder="0"
@@ -430,6 +435,9 @@ export const pages = {
 					/>
 				</div>
 				<p>
+					OÜ Väekas <br />
+					Reg nr: 12810193<br />
+					Aadress: Kareda vald, Järvamaa<br />
 					E-mail: <a className="row" href="mailto:info@rahvaravi.ee">info@rahvaravi.ee</a><br />
 					Telefon: <a className="row" href="tel:+37255633544">5563 3544</a><br />
 				</p>
