@@ -37,6 +37,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			inject: true,
 			template: path.resolve(__dirname, '..', 'index.template.html'),
+			favicon: path.join(srcPath, 'gfx/icon/favicon.ico'),
 		}),
 		new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"development"' }),
 		new webpack.HotModuleReplacementPlugin(),
