@@ -1,23 +1,24 @@
 import React from 'react';
-import './home-view.scss';
-
 import { Link } from 'react-router';
 import Image from '../../components/Image';
-
 import { services, pages } from '../../../config/data';
+import './home-view.scss';
 
 const HomeView = () => {
-	const getFormattedServiceList = () => Object.keys(services).map(serviceKey => {
-		const service = services[serviceKey];
+	const getFormattedServiceList = () => Object.keys(services)
+		.filter(serviceKey => services[serviceKey].visibleInHomePage)
+		.map(serviceKey => {
+			const service = services[serviceKey];
 
-		return {
-			title: service.title,
-			description: service.summary,
-			link: `/teenused/${serviceKey}`,
-			imageSrc: service.coverImageSmall,
-			key: serviceKey,
-		};
-	});
+			return {
+				title: service.title,
+				description: service.summary,
+				link: `/teenused/${serviceKey}`,
+				imageSrc: service.coverImageSmall,
+				key: serviceKey,
+			};
+		}
+	);
 
 	const aboutInfo = pages.tutvustus;
 

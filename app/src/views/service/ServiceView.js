@@ -18,7 +18,7 @@ const ServiceView = (props) => {
 					) : null}
 					<h1 className="title">{service.title}</h1>
 
-					{service.priceList.map((item, index) => (
+					{service.priceList && service.priceList.map((item, index) => (
 						<p className="stats" key={index}>
 							{service.priceList.length > 1 ? (
 								<span><strong>{item.title}</strong><br /></span>
@@ -35,28 +35,38 @@ const ServiceView = (props) => {
 			</div>
 
 			<div className="page-sidebar">
-				<div id="broneeri" className="booking-form">
-					<h2 className="sidebar-title">Broneeri aeg</h2>
-					<p>
-						<span className="title">Telefon:</span>
-						5563 3544
-					</p>
-					<p>
-						<span className="title">{service.locations.length > 1 ? 'Asukohad' : 'Asukoht'}:</span>
-						{service.locations.map((location, index) => (
-							<span className="service-location" key={index}>{location}</span>
-						))}
-					</p>
-					<p>
-						<span className="title">Tasumine:</span>
-						Maksta saab kohapeal sularahas või ettemaksuarvega:
-					</p>
-					<p>
-						Saaja: OÜ Väekas<br />
-						Konto nr: EE692200221061510389<br />
-						Selgitus: Teile väljastatud arve number
-					</p>
-				</div>
+				{service.sidebarContent ? (
+					<div id="broneeri" className="booking-form">
+						<h2 className="sidebar-title">Lisainfo</h2>
+						{service.sidebarContent}
+					</div>
+				) : null}
+
+				{service.canBook ? (
+					<div id="broneeri" className="booking-form">
+						<h2 className="sidebar-title">Broneeri aeg</h2>
+						<p>
+							<span className="title">Telefon:</span>
+							5563 3544
+						</p>
+						<p>
+							<span className="title">{service.locations.length > 1 ? 'Asukohad' : 'Asukoht'}:</span>
+							{service.locations.map((location, index) => (
+								<span className="service-location" key={index}>{location}</span>
+							))}
+						</p>
+						<p>
+							<span className="title">Tasumine:</span>
+							Maksta saab kohapeal sularahas või ettemaksuarvega:
+						</p>
+						<p>
+							Saaja: OÜ Väekas<br />
+							Konto nr: EE692200221061510389<br />
+							Selgitus: Teile väljastatud arve number
+						</p>
+					</div>
+				) : null}
+
 			</div>
 		</div>
 	);

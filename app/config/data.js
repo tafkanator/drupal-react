@@ -5,6 +5,7 @@ import React from 'react';
 import imgHoneyMassage from './img/honey-massage.png';
 import imgCupTherapy from './img/cup-therapy.png';
 import imgLeechTherapy from './img/leech-therapy.png';
+import imgConsult from './img/consult.jpg';
 import imgOldEstonianMassage from './img/old-estonian-massage.png';
 
 import imgAboutMe from './img/about-me.jpg';
@@ -12,12 +13,14 @@ import imgAboutMe from './img/about-me.jpg';
 export const services = {
 	'vana-eesti-massaas': {
 		title: 'Vana-Eesti massaaž',
+		canBook: true,
+		visibleInHomePage: true,
 		priceList: [{
 			title: 'Vana-Eesti massaaž',
 			price: '25€',
 			duration: '90 minutit',
 		}],
-		summary: 'Aita lõõgastada keha sundasenditest, lihaspingetest, stressist ning toeta muude tervisehädade korral, ...',
+		summary: 'Aitab lõõgastada keha sundasenditest, lihaspingetest, stressi ning toetab muude tervisehädade korral, ...',
 		coverImageSmall: imgOldEstonianMassage,
 		coverImageMedium: imgOldEstonianMassage,
 		locations: [
@@ -80,6 +83,8 @@ export const services = {
 	},
 	'meemassaas': {
 		title: 'Meemassaaž',
+		canBook: true,
+		visibleInHomePage: true,
 		priceList: [{
 			title: 'Meemassaaž',
 			duration: '60 minutit',
@@ -92,7 +97,7 @@ export const services = {
 			'Paides Pärnu tn 75',
 		],
 		summary:
-			'Paranda oma vereringet, leevenda liigesvalusid, vähenda stressi, ravi hingamisteede haigusi, ...',
+			'Parandab vereringet, leevendab liigesvalusid, vähendab stressi, ravib hingamisteede haigusi, ...',
 		content: (
 			<div className="service-content">
 				<p>Mee kasulikus toimes ei kahtle ilmselt mitte keegi, aga siin mõned põhjused, miks mee kasutamine massaažis on efektiivne ja hea:</p>
@@ -183,6 +188,8 @@ export const services = {
 	},
 	'kuputeraapia': {
 		title: 'Kuputeraapia ja -massaaž',
+		canBook: true,
+		visibleInHomePage: true,
 		menuTitle: 'Kuputeraapia',
 		priceList: [{
 			title: 'Kuputeraapia',
@@ -199,7 +206,7 @@ export const services = {
 			'Kilplaste Koda Müüsleris (ainult kuputeraapia)',
 			'Albu küladetuba Kaalepis (ainult kuputeraapia)',
 		],
-		summary: 'Leevenda närvi-, lihas- ja liigesvalusid, ravi sporditraumasid või erinevaid valusündroome, samuti unetust, paranda naha toonust, ...',
+		summary: 'Leevendab närvi-, lihas- ja liigesvalusid, ravib sporditraumasid või erinevaid valusündroome, samuti unetust, parandab naha toonust, ...',
 		coverImageSmall: imgCupTherapy,
 		coverImageMedium: imgCupTherapy,
 		content: (
@@ -268,12 +275,14 @@ export const services = {
 	},
 	'kaaniteraapia': {
 		title: 'Kaaniteraapia',
+		canBook: true,
+		visibleInHomePage: true,
 		priceList: [{
 			title: 'Kaaniteraapia',
 			price: '5€ kaan + töötasu 15€',
 			duration: '60-90 minutit',
 		}],
-		summary: 'Toeta südame- ja veresoondkonna haigusi ning vereringe häireid, neuroloogilisi haigusi, mao- ja seedetrakti haigusi, ...',
+		summary: 'Toetab südame- ja veresoondkonna haigusi ning vereringe häireid, neuroloogilisi haigusi, mao- ja seedetrakti haigusi, ...',
 		coverImageSmall: imgLeechTherapy,
 		coverImageMedium: imgLeechTherapy,
 		locations: [
@@ -368,7 +377,22 @@ export const services = {
 					<li>Võtta esmajärjekorras ühendust küsimuste või probleemide korral kaaniterapeudiga.</li>
 				</ul>
 
-				<p>Teaduslik ingl. keelne lisamaterjal soovi korral lugemiseks: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3757849/" target="_blank">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3757849/</a></p>
+				<p>Teaduslik ingl. keelne lisamaterjal soovi korral lugemiseks: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3757849/" target="_blank" rel="noopener noreferrer">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3757849/</a></p>
+			</div>
+		),
+	},
+	'loodusravi-noustamine': {
+		title: 'Loodusravi nõustamine',
+		canBook: false,
+		visibleInHomePage: false,
+		summary: 'Toetab südame- ja veresoondkonna haigusi ning vereringe häireid, neuroloogilisi haigusi, mao- ja seedetrakti haigusi, ...',
+		coverImageSmall: imgConsult,
+		coverImageMedium: imgConsult,
+		sidebarContent: 'Loodusravi nõustamine kuulub iga väeka teraapia juurde',
+		content: (
+			<div className="service-content">
+				<p>Kui klient tuleb vastuvõtule, siis käiakse koos terapeudiga läbi tema tervise anamnees, et saada aimu inimese eluviisidest, töö iseloomust, kahjulikest harjumustest, mineviku traumadest jms ning sellest lähtuvalt saab terapeut ka nõu anda.</p>
+				<p>Loodusravi nõustamine võib hõlmata toitumise teemadel arutlemist, vitamiinide, toidulisandite või taimsete teede soovitamist, harjutuste tegemist jms - kõik sõltub kliendi teadlikkusest ja vajadustest.</p>
 			</div>
 		),
 	},
@@ -386,6 +410,7 @@ export const pages = {
 				<p>Oma uutest oskustest lähtuvalt sündis 2015. aasta märtsis OÜ Väekas, mille alt olen aktiivselt pakkunud soonetasumist. Pakutavaid rahvaravi teenuseid on ajapikku lisandunud veelgi ning klientide vajadusest lähtuvalt nõustan neid, mida nad saavad veel ise oma tervise heaks ära teha.</p>
 				<p>Olen osalenud väekate teenuste ja toodete tutvustamiseks erinevatel laatadel, tervisepäevadel ja avatud talude päeval, minu tegemistest on kirjutatud mitmeid artikleid, on tehtud raadiointervjuu ja kutsutud veel mujalegi. Seega soov inimesi aidata ja neile head teha on minus alati olemas olnud, seetõttu ka sellised erialavalikud ja tegutsemine. Püüan anda inimestele tagasi nende valikuvõimalused ja vastutuse nende endi tervise eest.</p>
 				<p>Rahvaravi on väga hea vahend oma tervise hoidmiseks ja parandamiseks kas siis iseseisva nähtusena või klassikalise meditsiini täienduseks – see valik jääb aga juba inimese enda otsutada.</p>
+				<p>OÜ Väekas teenuseid on juba kasutanud paljud, kellele on oluline oma keha ja tervise eest hoolitsemine – klientide hulgas on näiteks koduperenaisi, edukaid ettevõtjaid, raske füüsilise töö tegijaid, kontoritöötajaid, sportlasi, õpetajaid ja palju teisi.</p>
 			</div>
 		),
 	},
