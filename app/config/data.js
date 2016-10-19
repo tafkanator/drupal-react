@@ -24,7 +24,7 @@ export const services = {
 		coverImageSmall: imgOldEstonianMassage,
 		coverImageMedium: imgOldEstonianMassage,
 		locations: [
-			'Paides Pärnu tn 75',
+			'Paides Pärnu tn 56',
 			'Roosna-Alliku vallamaja',
 			'Kilplaste Koda Müüsleris',
 			'Albu küladetuba Kaalepis',
@@ -98,7 +98,7 @@ export const services = {
 		coverImageSmall: imgHoneyMassage,
 		coverImageMedium: imgHoneyMassage,
 		locations: [
-			'Paides Pärnu tn 75',
+			'Paides Pärnu tn 56',
 		],
 		summary:
 			'Parandab vereringet, leevendab liigesvalusid, vähendab stressi, ravib hingamisteede haigusi, ...',
@@ -205,7 +205,7 @@ export const services = {
 			price: '20€',
 		}],
 		locations: [
-			'Paides Pärnu tn 75 (kuputeraapia ja -massaaž)',
+			'Paides Pärnu tn 56 (kuputeraapia ja -massaaž)',
 			'Roosna-Alliku vallamaja (ainult kuputeraapia)',
 			'Kilplaste Koda Müüsleris (ainult kuputeraapia)',
 			'Albu küladetuba Kaalepis (ainult kuputeraapia)',
@@ -291,7 +291,7 @@ export const services = {
 		coverImageSmall: imgLeechTherapy,
 		coverImageMedium: imgLeechTherapy,
 		locations: [
-			'Paides Pärnu tn 75',
+			'Paides Pärnu tn 56',
 			'Roosna-Alliku vallamaja',
 			'Kilplaste Koda Müüsleris',
 			'Albu küladetuba Kaalepis',
@@ -428,9 +428,9 @@ export const pages = {
 			<div className="page-content">
 				<p>Teenuste asukohad on toodud all kaardi peal välja kuid kokkuleppel võin tulla ka teie koju või töökohta.</p>
 				<div className="location-map">
-					<h2 className="h3">Pärnu 75, Paide</h2>
+					<h2 className="h3">Pärnu 56, Paide</h2>
 					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2061.7317371737877!2d25.54972111636103!3d58.88561608150581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46933699a5403567%3A0xd30979ed7fee3138!2sP%C3%A4rnu+75%2C+Paide%2C+72715+J%C3%A4rva+maakond!5e0!3m2!1sen!2see!4v1474902175950"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2061.6984542798486!2d25.55532151592869!3d58.88617435351691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4693369a0494f5b7%3A0xbc661ac75bd3afc5!2sP%C3%A4rnu+56%2C+Paide%2C+72712+J%C3%A4rva+maakond!5e0!3m2!1set!2see!4v1476906410222"
 						width="400"
 						height="300"
 						frameBorder="0"
