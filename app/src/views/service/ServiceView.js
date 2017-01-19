@@ -45,6 +45,7 @@ const ServiceView = (props) => {
 				{service.canBook ? (
 					<div id="broneeri" className="booking-form">
 						<h2 className="sidebar-title">Broneeri aeg</h2>
+						<p>Vastuvõtt ainult nädalavahetusti</p>
 						<p>
 							<span className="title">Telefon:</span>
 							5563 3544
