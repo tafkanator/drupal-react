@@ -426,54 +426,12 @@ export const pages = {
 		title: 'Kontakt',
 		content: (
 			<div className="page-content">
-				<p>Teenuste asukohad on toodud all kaardi peal välja kuid kokkuleppel võin tulla ka teie koju või töökohta.</p>
-				<div className="location-map">
-					<h2 className="h3">Pärnu 56, Paide</h2>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2061.6984542798486!2d25.55532151592869!3d58.88617435351691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4693369a0494f5b7%3A0xbc661ac75bd3afc5!2sP%C3%A4rnu+56%2C+Paide%2C+72712+J%C3%A4rva+maakond!5e0!3m2!1set!2see!4v1476906410222"
-						width="400"
-						height="300"
-						frameBorder="0"
-						allowFullScreen
-					/>
-				</div>
-				<div className="location-map">
-					<h2 className="h3">Roosna-Alliku vallamaja</h2>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2053.1210969786175!2d25.706450416365588!3d59.02993788155511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469339371cb16123%3A0x7cda7c3d8352e79d!2sRoosna-Alliku+vallavalitsus!5e0!3m2!1sen!2see!4v1474902733647"
-						width="400"
-						height="300"
-						frameBorder="0"
-						allowFullScreen
-					/>
-				</div>
-				<div className="location-map">
-					<h2 className="h3">Kilplaste Koda Müüsleris</h2>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2059.7114217514404!2d25.88057891636212!3d58.91949798151737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4693460c162f2ffd%3A0x58ab4ff953c845a4!2sKilplane+O%C3%9C!5e0!3m2!1sen!2see!4v1474902893845"
-						width="400"
-						height="300"
-						frameBorder="0"
-						allowFullScreen
-					/>
-				</div>
-				<div className="location-map">
-					<h2 className="h3">Albu küladetuba Kaalepis</h2>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1024.6890714667097!2d25.683525300670226!3d59.092604998371584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDA1JzMzLjQiTiAyNcKwNDEnMDMuMCJF!5e0!3m2!1set!2see!4v1474970547587"
-						width="400"
-						height="300"
-						frameBorder="0"
-						allowFullScreen
-					/>
-				</div>
 				<p>
 					OÜ Väekas <br />
 					Reg nr: 12810193<br />
 					Aadress: Kareda vald, Järvamaa<br />
 					Konto nr: EE692200221061510389<br />
 					E-mail: <a className="row" href="mailto:info@rahvaravi.ee">info@rahvaravi.ee</a><br />
-					Telefon: <a className="row" href="tel:+37255633544">5563 3544</a><br />
 				</p>
 			</div>
 		),
